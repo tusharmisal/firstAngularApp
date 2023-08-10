@@ -1,0 +1,32 @@
+<h2>Course Details</h2>
+<table class="table">
+<thead></thead>
+<tr>
+    <th scope="col">Id</th>
+    <th scope="col">Name</th>
+    <th scope="col">Start Date</th>
+    <th scope="col">End Date</th>
+</tr>
+<tr *ngFor="let course of courseData">
+    <th scope="row" appElementcolor>{{course.Id}}</th>
+    <th>{{course.CourseName}}</th>
+    <th>{{course.StartDate}}</th>
+    <th>{{course.EndDate}}</th>
+</tr>
+</table>
+<h1>Switch case example</h1>
+<select [(ngModel)]="selectedValue">
+    <option *ngFor="let item of items" [value]="item.value">{{item.name}}</option>
+</select>
+<div [ngSwitch]="selectedValue">
+<div *ngSwitchCase="1">Firstname id select and its value id {{selectedValue}}</div>
+<div *ngSwitchCase="2">Firstname id select and its value id {{selectedValue}}</div>
+<div *ngSwitchDefault>No value selected now</div>
+</div>
+<div>
+    <h2>Value received from parent : {{recievedValueFromParent}}</h2>
+<ng-template #sampleTemplate>
+    NG Template Container Example
+</ng-template>
+<button (click)="navigateToUser()">Navigate to user using Routing</button>
+</div>
