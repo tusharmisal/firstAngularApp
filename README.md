@@ -1,2 +1,0 @@
-# firstAngularApp
-First angular App
